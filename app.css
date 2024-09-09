@@ -124,7 +124,7 @@ body {
 }
 
 .message p {
-    color: red;
+    color: green;
     text-align: center;
     font-size: 3em;
 }
