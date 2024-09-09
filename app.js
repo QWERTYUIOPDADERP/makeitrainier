@@ -43,14 +43,14 @@ async function pointsCounter() {
     let element = document.getElementById('points');
     let counter = 0;
 
-    const DEF_DELAY = 1000;
+    const DEF_DELAY = 10;
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms || DEF_DELAY));
     }
 
     while(true){
-    await sleep(1000);
+    await sleep(10);
     counter++
     element.innerHTML = counter;
     }
