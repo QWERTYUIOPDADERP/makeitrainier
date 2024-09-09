@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #202020, #111119);
+    background: linear-gradient(to bottom, #111119, #202020);
 }
 
 .rain {
@@ -38,11 +38,11 @@ body {
     }
 
     75% {
-        transform: translateY(0vh);
+        transform: translateY(20vh);
     }
 
     100% {
-        transform: translateY(0vh);
+        transform: translateY(20vh);
     }
 }
 
