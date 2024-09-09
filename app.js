@@ -13,7 +13,7 @@ function makeItRain() {
         frontRow = document.querySelector('.rain.front-row'),
         backRow = document.querySelector('.rain.back-row');
 
-    while (increment < 100) {
+    while (increment < 400) {
         //random number between 98 and 1
         let randomHundred = (Math.floor(Math.random() * (98 - 1 + 1) + 1)),
             //random number between 5 and 2
