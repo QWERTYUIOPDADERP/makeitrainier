@@ -1,0 +1,26 @@
+let won = false;
+let attempts = 0;
+let startMaxNum = 10;
+let digitsAfterDecimal = 1;
+let guesses = 5;
+
+while(true){
+    let randomnum = 1+(Math.round((10**digitsAfterDecimal)*(Math.random()*((startMaxNum-(1))-attempts))))/(10**digitsAfterDecimal);
+    
+    for(let i = 0; i < guesses; i++){
+        let input = prompt('Guess a random number between 1 and '+(startMaxNum-attempts)+'. \nYou have '+(guesses-i)+' guesses left.');
+        if(input<randomnum){
+            alert("Higher");
+        } else if(input>randomnum){
+            alert("Lower");
+        } else {
+            alert("You win");
+            won = true;
+            break;
+        }
+    }
+    attempts ++;
+
+    if(won) break;
+    alert("The number was: "+randomnum+".");
+}
